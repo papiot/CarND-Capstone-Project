@@ -114,7 +114,7 @@ class WaypointUpdater(object):
             dist = self.distance(waypoints, i, stop_idx)
             
             # Multiply by a constant, get a linear decel
-            vel = 2 * MAX_DECEL * dist
+            vel = MAX_DECEL * dist
 
             if vel < 1.:
                 vel = 0.
